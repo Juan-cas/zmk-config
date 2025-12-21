@@ -196,8 +196,8 @@
             bindings = <
 &kp LEFT_ALT  &kp Q        &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I     &kp O  &kp P          &none
 &kp TAB       &kp A        &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K     &kp L  &kp BACKSPACE  &none
-&kp LSHFT     &mt LSHFT Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &none     &none  &none          &to 4
-                                  &to 3  &to 1  &kp SPACE    &kp ENTER  &to 2  &kp LGUI
+&kp LSHFT     &mt LSHFT Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &none     &none  &none          &mo 4
+                                  &mo 3  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LGUI
             >;
         };
 
@@ -210,10 +210,10 @@
             // 1
 
             bindings = <
-&trans  &none   &kp NUMBER_1  &kp NUMBER_2  &kp N3        &none     &none           &none           &none         &none      &none  &trans
-&trans  &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &trans
-&trans  &none   &kp N7        &kp N8        &kp N9        &none     &none           &none           &none         &none      &none  &trans
-                              &trans        &trans        &trans    &trans          &trans          &trans
+&none  &none   &kp NUMBER_1  &kp NUMBER_2  &kp N3        &none    &none           &none           &none         &none      &none  &none
+&none  &kp N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
+&none  &none   &kp N7        &kp N8        &kp N9        &none    &none           &none           &none         &none      &none  &none
+                             &none         &none         &none    &none           &none           &none
             >;
         };
 
@@ -229,16 +229,16 @@
 &kp LEFT_BRACE   &kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp PIPE              &none                  &none        &kp TILDE     &kp QUESTION  &kp NON_US_BACKSLASH  &kp SLASH      &kp PERCENT       &none
 &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL    &kp ASTERISK  &kp COLON     &kp SEMICOLON         &kp AMPERSAND  &kp CARET         &none
 &kp LSHIFT       &kp LESS_THAN     &kp GREATER_THAN   &kp PLUS              &kp UNDERSCORE         &kp MINUS    &kp AT_SIGN   &kp HASH      &kp COMMA             &kp PERIOD     &kp SINGLE_QUOTE  &none
-                                                      &trans                &trans                 &trans       &trans        &trans        &trans
+                                                      &none                 &none                  &none        &none         &none         &none
             >;
         };
 
         navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp BACKSPACE  &kp LA(MINUS)  &kp LA(PLUS)  &none       &none    &none    &none  &none  &none  &none  &none  &none
+&none          &kp LEFT_ALT   &kp LCTRL     &kp LSHIFT  &kp TAB  &none    &none  &none  &none  &none  &none  &none
+&kp CAPSLOCK   &none          &none         &none       &none    &none    &none  &none  &none  &none  &none  &none
+                                            &none       &none    &none    &none  &none  &none
             >;
         };
 
