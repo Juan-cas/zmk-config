@@ -196,7 +196,7 @@
             bindings = <
 &kp LEFT_ALT  &kp Q        &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I     &kp O  &kp P          &none
 &kp TAB       &kp A        &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K     &kp L  &kp BACKSPACE  &none
-&kp LSHFT     &mt LSHFT Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &none     &none  &none          &none
+&kp LSHFT     &mt LSHFT Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &none     &none  &none          &to 4
                                   &to 3  &to 1  &kp SPACE    &kp ENTER  &to 2  &kp LGUI
             >;
         };
@@ -230,6 +230,15 @@
 &none       &none  &none  &none     &none       &kp GRAVE        &kp PLUS      &kp LS(MINUS)  &kp RA(N1)   &kp UP        &kp SEMI   &none
 &none       &none  &none  &kp BSLH  &kp RA(N3)  &kp RA(N4)       &kp EQUAL     &kp EXCL       &kp LEFT     &kp DOWN      &kp RIGHT  &none
                           &trans    &trans      &trans           &trans        &trans         &trans
+            >;
+        };
+
+        navigation {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
