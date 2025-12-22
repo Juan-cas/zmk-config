@@ -17,82 +17,20 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_acute_n {
-            timeout-ms = <300>; // Límite de tiempo para la secuencia
-            key-positions = <22 30>; // ACUTE en pos 22, N en pos 30
-            bindings = <&n_tilde>;   // Dispara macro ñ
-        };
-
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <4 5>;
+            key-positions = <19 20>;
             bindings = <&kp ESC>;
         };
 
         compatible = "zmk,combos";
-
-        combo_tab {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp TAB>;
-        };
-
         compatible = "zmk,combos";
-
-        combo_arr {
-            timeout-ms = <50>;
-            key-positions = <28 29>;
-            bindings = <&kp RA(N2)>;
-        };
-
         compatible = "zmk,combos";
-
-        combo_BSPC1 {
-            timeout-ms = <50>;
-            key-positions = <18 19>;
-            bindings = <&kp LC(BSPC)>;
-        };
-
         compatible = "zmk,combos";
-
-        combo_BSPC2 {
-            timeout-ms = <50>;
-            key-positions = <9 10>;
-            bindings = <&kp BSPC>;
-        };
-
         compatible = "zmk,combos";
-
-        combo_num {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-            bindings = <&tog 1>;
-        };
-
         compatible = "zmk,combos";
-
-        combo_ene {
-            timeout-ms = <50>;
-            key-positions = <21 22>;
-            bindings = <&kp SEMI>;
-        };
-
         compatible = "zmk,combos";
-
-        combo_ene2 {
-            timeout-ms = <50>;
-            key-positions = <30 31>;
-            bindings = <&kp SEMI>;
-        };
-
         compatible = "zmk,combos";
-
-        combo_suspende {
-            timeout-ms = <50>;
-            key-positions = <14 15 16>;
-            bindings = <&win_sleep>;
-        };
-
         compatible = "zmk,combos";
 
         combo_blqmayus {
@@ -102,12 +40,6 @@
         };
 
         compatible = "zmk,combos";
-
-        combo_ctrolz {
-            timeout-ms = <50>;
-            key-positions = <15 16>;
-            bindings = <&kp LC(Z)>;
-        };
     };
 };
 
@@ -153,22 +85,6 @@
             label = "BT4_RGB";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 4 &rgb_ug RGB_COLOR_HSB(45,100,5)>;
-        };
-
-        win_sleep: win_sleep {
-            wait-ms = <500>;
-            tap-ms = <5>;
-            compatible = "zmk,behavior-macro";
-            label = "WIN_SLEEP_KEY";
-            #binding-cells = <0>;
-            bindings = <&kp LG(X) &kp G &kp S>;
-        };
-
-        n_tilde: n_tilde {
-            compatible = "zmk,behavior-macro";
-            label = "ñ Macro";
-            #binding-cells = <0>;
-            bindings = <&kp SEMI>; // Unicode para ñ
         };
     };
 };
